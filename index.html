@@ -8,83 +8,75 @@
 </head>
 <body class="font-sans bg-gray-100 text-gray-800">
 
-  <!-- Header -->
+  <!-- Header (Navigation) -->
   <header class="bg-yellow-800 text-white p-6">
     <nav class="container mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold">Coffee Bliss</h1>
       <ul class="flex space-x-6 text-lg">
-        <li><a href="#" class="hover:text-yellow-300">Home</a></li>
-        <li><a href="#" class="hover:text-yellow-300">Menu</a></li>
-        <li><a href="#" class="hover:text-yellow-300">About</a></li>
-        <li><a href="#" class="hover:text-yellow-300">Contact</a></li>
+        <li><a href="#home" class="hover:text-yellow-300 transition-colors duration-200">Home</a></li>
+        <li><a href="#menu" class="hover:text-yellow-300 transition-colors duration-200">Menu</a></li>
+        <li><a href="#about" class="hover:text-yellow-300 transition-colors duration-200">About</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300 transition-colors duration-200">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Menu Grid -->
-  <main class="container mx-auto my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
-    
-    <!-- Article 1 -->
-    <article class="relative bg-cover bg-center text-white h-80 rounded shadow overflow-hidden" style="background-image: url('https://source.unsplash.com/600x400/?espresso');">
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div class="relative p-6 flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/4264/4264823.png" alt="Espresso" class="w-16 h-16 mb-3" />
-        <h2 class="text-2xl font-bold mb-1">Espresso</h2>
-        <p>Strong and bold — a classic favorite to jumpstart your day.</p>
-      </div>
-    </article>
+  <!-- Home Section -->
+  <section id="home" class="py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4 animate-pulse">How to Order</h2>
+    <p class="max-w-xl mx-auto text-gray-700">
+      Browse our menu, choose your favorite coffee and add‑ons, then click or email us to place your order. It’s that simple!
+    </p>
+  </section>
 
-    <!-- Article 2 -->
-    <article class="relative bg-cover bg-center text-white h-80 rounded shadow overflow-hidden" style="background-image: url('https://source.unsplash.com/600x400/?latte');">
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div class="relative p-6 flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/924/924514.png" alt="Latte" class="w-16 h-16 mb-3" />
-        <h2 class="text-2xl font-bold mb-1">Latte</h2>
-        <p>Steamed milk and espresso, perfectly balanced and smooth.</p>
-      </div>
-    </article>
+  <!-- Menu Section -->
+  <section id="menu" class="py-16 px-4 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Menu</h2>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Coffee Cards with Add-ons Listed -->
+      <article class="relative bg-cover bg-center text-white h-80 rounded shadow hover:scale-105 transform transition-transform duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?espresso')">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative p-6">
+          <h3 class="text-2xl font-bold mb-2">Espresso</h3>
+          <p>Classic bold flavor.</p>
+          <p class="mt-4 font-semibold">Add-ons: Vanilla, Caramel, Soy Milk</p>
+        </div>
+      </article>
 
-    <!-- Article 3 -->
-    <article class="relative bg-cover bg-center text-white h-80 rounded shadow overflow-hidden" style="background-image: url('https://source.unsplash.com/600x400/?cappuccino');">
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div class="relative p-6 flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/135/135620.png" alt="Cappuccino" class="w-16 h-16 mb-3" />
-        <h2 class="text-2xl font-bold mb-1">Cappuccino</h2>
-        <p>Foamy, creamy, and topped with cocoa or cinnamon.</p>
-      </div>
-    </article>
+      <article class="relative bg-cover bg-center text-white h-80 rounded shadow hover:scale-105 transform transition-transform duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?latte')">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative p-6">
+          <h3 class="text-2xl font-bold mb-2">Latte</h3>
+          <p>Smooth and creamy.</p>
+          <p class="mt-4 font-semibold">Add-ons: Hazelnut, Extra Shot, Almond Milk</p>
+        </div>
+      </article>
 
-    <!-- Article 4 -->
-    <article class="relative bg-cover bg-center text-white h-80 rounded shadow overflow-hidden" style="background-image: url('https://source.unsplash.com/600x400/?coldbrew');">
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div class="relative p-6 flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/590/590836.png" alt="Cold Brew" class="w-16 h-16 mb-3" />
-        <h2 class="text-2xl font-bold mb-1">Cold Brew</h2>
-        <p>Chilled, smooth coffee brewed slowly for 12 hours.</p>
-      </div>
-    </article>
+      <article class="relative bg-cover bg-center text-white h-80 rounded shadow hover:scale-105 transform transition-transform duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?cappuccino')">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative p-6">
+          <h3 class="text-2xl font-bold mb-2">Cappuccino</h3>
+          <p>Foamy perfection.</p>
+          <p class="mt-4 font-semibold">Add-ons: Cocoa, Cinnamon, Oat Milk</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-    <!-- Article 5 -->
-    <article class="relative bg-cover bg-center text-white h-80 rounded shadow overflow-hidden" style="background-image: url('https://source.unsplash.com/600x400/?mocha');">
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div class="relative p-6 flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/4210/4210903.png" alt="Mocha" class="w-16 h-16 mb-3" />
-        <h2 class="text-2xl font-bold mb-1">Mocha</h2>
-        <p>Chocolate meets coffee in this rich and indulgent drink.</p>
-      </div>
-    </article>
+  <!-- About Section -->
+  <section id="about" class="py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">About Coffee Bliss</h2>
+    <p class="max-w-2xl mx-auto text-gray-700">
+      Located in the heart of the city, Coffee Bliss is a cozy café where every cup is brewed to bring you joy. We source ethically, roast passionately, and serve warmly.
+    </p>
+  </section>
 
-    <!-- Article 6 -->
-    <article class="relative bg-cover bg-center text-white h-80 rounded shadow overflow-hidden" style="background-image: url('https://source.unsplash.com/600x400/?coffee,beans');">
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div class="relative p-6 flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/5787/5787156.png" alt="House Blend" class="w-16 h-16 mb-3" />
-        <h2 class="text-2xl font-bold mb-1">House Blend</h2>
-        <p>Our signature blend of beans roasted to perfection.</p>
-      </div>
-    </article>
-
-  </main>
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 bg-gray-50 text-center">
+    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+    <p class="mb-6">Ready to order or have questions? Reach us via our Gmail:</p>
+    <a href="mailto:coffeebliss.cafe@gmail.com" class="text-yellow-800 font-semibold underline transition-colors duration-200 hover:text-yellow-600">coffeebliss.cafe@gmail.com</a>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white text-center p-6">
