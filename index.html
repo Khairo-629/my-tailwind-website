@@ -3,105 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Café Bliss</title>
+  <title>Coffee Bliss</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .bg-card {
-      background-size: cover;
-      background-position: center;
-      transition: transform 0.3s ease-in-out;
-    }
-    .bg-card:hover {
-      transform: scale(1.05);
-    }
-  </style>
 </head>
 <body class="font-sans bg-gray-100 text-gray-800">
 
-  <!-- Header -->
-  <header class="bg-yellow-900 text-white p-4 shadow-lg">
+  <!-- Header (Navigation) -->
+  <header class="bg-yellow-800 text-white p-6">
     <nav class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold tracking-wide">☕ Café Bliss</h1>
-      <ul class="flex space-x-6 text-sm md:text-base">
-        <li><a href="#home" class="hover:text-yellow-300 transition">Home</a></li>
-        <li><a href="#about" class="hover:text-yellow-300 transition">About</a></li>
-        <li><a href="#menu" class="hover:text-yellow-300 transition">Menu</a></li>
-        <li><a href="#contact" class="hover:text-yellow-300 transition">Contact</a></li>
+      <h1 class="text-2xl font-bold">Coffee Bliss</h1>
+      <ul class="flex space-x-6 text-lg">
+        <li><a href="#home" class="hover:text-yellow-300 transition-colors duration-200">Home</a></li>
+        <li><a href="#menu" class="hover:text-yellow-300 transition-colors duration-200">Menu</a></li>
+        <li><a href="#about" class="hover:text-yellow-300 transition-colors duration-200">About</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300 transition-colors duration-200">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Home Section -->
-  <section id="home" class="py-12 bg-pink text-center">
-    <h2 class="text-3xl font-bold mb-4">Order Your Favorite Coffee!</h2>
-    <p class="text-lg">Visit us or place your order online. Freshly brewed, just the way you like it.</p>
-    <button class="mt-6 px-6 py-2 bg-yellow-900 text-white rounded hover:bg-yellow-700 transition">Order Now</button>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-12 bg-brown-200 text-center">
-    <h2 class="text-3xl font-bold mb-4">About Café Bliss</h2>
-    <p class="max-w-xl mx-auto text-lg">We’re passionate about crafting the perfect cup. Locally sourced beans, hand-crafted brews, and a cozy vibe await you. ☕</p>
+  <section id="home" class="py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4 animate-pulse">How to Order</h2>
+    <p class="max-w-xl mx-auto text-gray-700">
+      Browse our menu, choose your favorite coffee and add‑ons, then click or email us to place your order. It’s that simple!
+    </p>
   </section>
 
   <!-- Menu Section -->
-  <section id="menu" class="py-12 bg-brown-100">
-    <div class="container mx-auto text-center mb-8">
-      <h2 class="text-3xl font-bold mb-2">Our Menu</h2>
-      <p class="text-lg text-gray-700">Explore our delightful coffee options and flavorful add-ons</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-0">
-      <!-- Menu Card 1 -->
-      <article class="bg-card h-64 rounded-lg shadow-lg text-black flex items-end p-4" style="background-image: url('/mnt/data/intro-1658860405.jpg');">
-        <div>
-          <h3 class="text-xl font-bold">Hot Brew</h3>
-          <p>Classic hot brewed coffee</p>
+  <section id="menu" class="py-16 px-4 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Menu</h2>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Coffee Cards with Add-ons Listed -->
+      <article class="relative bg-cover bg-center text-white h-80 rounded shadow hover:scale-105 transform transition-transform duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?espresso')">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative p-6">
+          <h3 class="text-2xl font-bold mb-2">Espresso</h3>
+          <p>Classic bold flavor.</p>
+          <p class="mt-4 font-semibold">Add-ons: Vanilla, Caramel, Soy Milk</p>
         </div>
       </article>
 
-      <!-- Menu Card 2 -->
-      <article class="bg-card h-64 rounded-lg shadow-lg text-blaclk flex items-end p-4" style="background-image: url('/mnt/data/eb92c30fe113c07e3b4f173f627d2557.jpg');">
-        <div>
-          <h3 class="text-xl font-bold">Iced Mocha</h3>
-          <p>Chocolate drizzle with ice</p>
+      <article class="relative bg-cover bg-center text-white h-80 rounded shadow hover:scale-105 transform transition-transform duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?latte')">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative p-6">
+          <h3 class="text-2xl font-bold mb-2">Latte</h3>
+          <p>Smooth and creamy.</p>
+          <p class="mt-4 font-semibold">Add-ons: Hazelnut, Extra Shot, Almond Milk</p>
         </div>
       </article>
 
-      <!-- Menu Card 3 -->
-      <article class="bg-card h-64 rounded-lg shadow-lg text-black flex items-end p-4" style="background-image: url('/mnt/data/decaf-cold-brew-concentrate-1456x2038.jpg');">
-        <div>
-          <h3 class="text-xl font-bold">Cold Brew</h3>
-          <p>Slow-steeped rich flavor</p>
-        </div>
-      </article>
-
-      <!-- Menu Card 4 -->
-      <article class="bg-card h-64 rounded-lg shadow-lg text-black flex items-end p-4" style="background-image: url('/mnt/data/LzESvc.jpg');">
-        <div>
-          <h3 class="text-xl font-bold">Cappuccino</h3>
-          <p>Velvety froth perfection</p>
-        </div>
-      </article>
-
-      <!-- Menu Card 5 -->
-      <article class="bg-card h-64 rounded-lg shadow-lg text-black flex items-end p-4" style="background-image: url('/mnt/data/AdobeStock_315919556-scaled.jpeg');">
-        <div>
-          <h3 class="text-xl font-bold">Latte</h3>
-          <p>Milk and espresso harmony</p>
-        </div>
-      </article>
-
-      <!-- Menu Card 6 -->
-      <article class="bg-card h-64 rounded-lg shadow-lg text-black flex items-end p-4" style="background-image: url('/mnt/data/OIP (1).webp');">
-        <div>
-          <h3 class="text-xl font-bold">Espresso</h3>
-          <p>Bold, intense shot</p>
+      <article class="relative bg-cover bg-center text-white h-80 rounded shadow hover:scale-105 transform transition-transform duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?cappuccino')">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative p-6">
+          <h3 class="text-2xl font-bold mb-2">Cappuccino</h3>
+          <p>Foamy perfection.</p>
+          <p class="mt-4 font-semibold">Add-ons: Cocoa, Cinnamon, Oat Milk</p>
         </div>
       </article>
     </div>
   </section>
 
+  <!-- About Section -->
+  <section id="about" class="py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">About Coffee Bliss</h2>
+    <p class="max-w-2xl mx-auto text-gray-700">
+      Located in the heart of the city, Coffee Bliss is a cozy café where every cup is brewed to bring you joy. We source ethically, roast passionately, and serve warmly.
+    </p>
+  </section>
+
   <!-- Contact Section -->
-  <section id="contact" class="py-12 bg-green-100 text-center">
-    <h2 class="text-3xl font-bold mb-4">Cont
+  <section id="contact" class="py-16 px-4 bg-gray-50 text-center">
+    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+    <p class="mb-6">Ready to order or have questions? Reach us via our Gmail:</p>
+    <a href="mailto:coffeebliss.cafe@gmail.com" class="text-yellow-800 font-semibold underline transition-colors duration-200 hover:text-yellow-600">coffeebliss.cafe@gmail.com</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-6">
+    <p>&copy; 2025 Coffee Bliss. Brewed with love.</p>
+  </footer>
+
+</body>
+</html>
