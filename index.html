@@ -18,56 +18,78 @@
 </head>
 <body class="font-sans bg-black text-white">
 
-  <!-- Header (Navigation) -->
-  <header class="bg-black border-b border-pink-500 text-white p-6">
+  <!-- Header -->
+  <header class="bg-black border-b border-yellow-400 text-white p-6">
     <nav class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-pink-500">Coffee Bliss</h1>
-      <ul class="flex space-x-6 text-lg items-center">
-        <li><a href="#home" class="hover:text-pink-300 transition">Home</a></li>
-        <li><a href="#menu" class="hover:text-pink-300 transition">Menu</a></li>
-        <li><a href="#about" class="hover:text-pink-300 transition">About</a></li>
-        <li><a href="#contact" class="hover:text-pink-300 transition">Contact</a></li>
-        <!-- 🔧 Log In Button -->
-        <li>
-          <button onclick="toggleLoginModal()" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-1 rounded transition">Log In</button>
-        </li>
+      <h1 class="text-2xl font-bold text-yellow-400">Coffee Bliss</h1>
+      <ul class="flex space-x-6 text-lg">
+        <li><a href="#home" class="hover:text-yellow-300 transition">Home</a></li>
+        <li><a href="#menu" class="hover:text-yellow-300 transition">Menu</a></li>
+        <li><a href="#about" class="hover:text-yellow-300 transition">About</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300 transition">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Home Section -->
   <section id="home" class="py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-pink-400 animate-pulse-custom">How to Order</h2>
-    <button class="mt-6 px-6 py-2 bg-pink-900 text-white rounded hover:bg-pink-1000 transition">Order Now</button>
-    <p class="max-w-xl mx-auto text-pink-200">
+    <h2 class="text-3xl font-bold mb-4 text-yellow-400 animate-pulse-custom">How to Order</h2>
+    <button class="mt-6 px-6 py-2 bg-yellow-700 text-white rounded hover:bg-yellow-800 transition">Order Now</button>
+    <p class="max-w-xl mx-auto text-yellow-200">
       Browse our menu, choose your favorite coffee and add‑ons, then click or email us to place your order. It’s that simple!
     </p>
   </section>
 
   <!-- Menu Section -->
   <section id="menu" class="py-16 px-4 bg-black">
-    <h2 class="text-3xl font-bold text-center mb-8 text-pink-400">Our Menu</h2>
+    <h2 class="text-3xl font-bold text-center mb-8 text-yellow-400">Our Menu</h2>
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Menu Items Here (unchanged) -->
-      <!-- ... -->
+      <!-- Menu Card 1 -->
+      <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?espresso')">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative p-6 text-yellow-100">
+          <h3 class="text-2xl font-bold mb-2 text-yellow-300">Espresso</h3>
+          <p>Classic bold flavor.</p>
+          <p class="mt-4 font-semibold">Add-ons: Vanilla, Caramel, Soy Milk</p>
+        </div>
+      </article>
+
+      <!-- Menu Card 2 -->
+      <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?latte')">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative p-6 text-yellow-100">
+          <h3 class="text-2xl font-bold mb-2 text-yellow-300">Latte</h3>
+          <p>Smooth and creamy.</p>
+          <p class="mt-4 font-semibold">Add-ons: Hazelnut, Extra Shot, Almond Milk</p>
+        </div>
+      </article>
+
+      <!-- Menu Card 3 -->
+      <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?cappuccino')">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative p-6 text-yellow-100">
+          <h3 class="text-2xl font-bold mb-2 text-yellow-300">Cappuccino</h3>
+          <p>Foamy perfection.</p>
+          <p class="mt-4 font-semibold">Add-ons: Cocoa, Cinnamon, Oat Milk</p>
+        </div>
+      </article>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-pink-400">About Coffee Bliss</h2>
-    <p class="max-w-2xl mx-auto text-pink-200">
+    <h2 class="text-3xl font-bold mb-4 text-yellow-400">About Coffee Bliss</h2>
+    <p class="max-w-2xl mx-auto text-yellow-200">
       Located in the heart of the city, Coffee Bliss is a cozy café where every cup is brewed to bring you joy. We source ethically, roast passionately, and serve warmly.
     </p>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="py-16 px-4 text-center bg-black">
-    <h2 class="text-3xl font-bold mb-4 text-pink-400">Contact Us</h2>
-    <p class="mb-6 text-pink-200">Ready to order or have questions? Reach us via our Gmail:</p>
-    <a href="mailto:coffeebliss.cafe@gmail.com" class="text-pink-500 font-semibold underline hover:text-pink-300 transition">coffeebliss.cafe@gmail.com</a>
+    <h2 class="text-3xl font-bold mb-4 text-yellow-400">Contact Us</h2>
+    <p class="mb-6 text-yellow-200">Ready to order or have questions? Reach us via our Gmail:</p>
+    <a href="mailto:coffeebliss.cafe@gmail.com" class="text-yellow-400 font-semibold underline hover:text-yellow-200 transition">coffeebliss.cafe@gmail.com</a>
   </section>
-
   <!-- 🔧 Log In Modal -->
   <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
     <div class="bg-white text-black rounded-lg p-8 w-full max-w-md relative">
@@ -86,19 +108,16 @@
       </form>
     </div>
   </div>
-
   <!-- Footer -->
-  <footer class="bg-black border-t border-pink-500 text-center p-6 text-pink-200">
-    <p>&copy; 2025 Coffee Bliss. Brewed with 💖.</p>
+  <footer class="bg-black border-t border-yellow-400 text-center p-6 text-yellow-200">
+    <p>&copy; 2025 Coffee Bliss. Brewed with 💛.</p>
   </footer>
-
-  <!-- 🔧 Script to toggle modal -->
+ <!-- 🔧 Script to toggle modal -->
   <script>
     function toggleLoginModal() {
       const modal = document.getElementById('loginModal');
       modal.classList.toggle('hidden');
     }
   </script>
-
 </body>
 </html>
