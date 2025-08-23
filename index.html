@@ -5,57 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Coffee Bliss</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Optional: Custom pulse color for pink */
+    .animate-pulse-custom {
+      animation: pulse-custom 2s infinite;
+    }
+
+    @keyframes pulse-custom {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+  </style>
 </head>
-<body class="font-sans bg-gray-100 text-gray-800">
+<body class="font-sans bg-black text-white">
 
   <!-- Header (Navigation) -->
-  <header class="bg-yellow-800 text-white p-6">
+  <header class="bg-black border-b border-pink-500 text-white p-6">
     <nav class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Coffee Bliss</h1>
+      <h1 class="text-2xl font-bold text-pink-500">Coffee Bliss</h1>
       <ul class="flex space-x-6 text-lg">
-        <li><a href="#home" class="hover:text-yellow-300 transition-colors duration-200">Home</a></li>
-        <li><a href="#menu" class="hover:text-yellow-300 transition-colors duration-200">Menu</a></li>
-        <li><a href="#about" class="hover:text-yellow-300 transition-colors duration-200">About</a></li>
-        <li><a href="#contact" class="hover:text-yellow-300 transition-colors duration-200">Contact</a></li>
+        <li><a href="#home" class="hover:text-pink-300 transition">Home</a></li>
+        <li><a href="#menu" class="hover:text-pink-300 transition">Menu</a></li>
+        <li><a href="#about" class="hover:text-pink-300 transition">About</a></li>
+        <li><a href="#contact" class="hover:text-pink-300 transition">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Home Section -->
   <section id="home" class="py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4 animate-pulse">How to Order</h2>
-    <p class="max-w-xl mx-auto text-gray-700">
+    <h2 class="text-3xl font-bold mb-4 text-pink-400 animate-pulse-custom">How to Order</h2>
+ <button class="mt-6 px-6 py-2 bg-yellow-900 text-white rounded hover:bg-yellow-700 transition">Order Now</button>
+
+    <p class="max-w-xl mx-auto text-pink-200">
       Browse our menu, choose your favorite coffee and add‑ons, then click or email us to place your order. It’s that simple!
     </p>
   </section>
 
   <!-- Menu Section -->
-  <section id="menu" class="py-16 px-4 bg-gray-50">
-    <h2 class="text-3xl font-bold text-center mb-8">Our Menu</h2>
+  <section id="menu" class="py-16 px-4 bg-black">
+    <h2 class="text-3xl font-bold text-center mb-8 text-pink-400">Our Menu</h2>
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Coffee Cards with Add-ons Listed -->
-      <article class="relative bg-cover bg-center text-white h-80 rounded shadow hover:scale-105 transform transition-transform duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?espresso')">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="relative p-6">
-          <h3 class="text-2xl font-bold mb-2">Espresso</h3>
+      <!-- Menu Card 1 -->
+      <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?espresso')">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative p-6 text-pink-100">
+          <h3 class="text-2xl font-bold mb-2 text-pink-400">Espresso</h3>
           <p>Classic bold flavor.</p>
           <p class="mt-4 font-semibold">Add-ons: Vanilla, Caramel, Soy Milk</p>
         </div>
       </article>
 
-      <article class="relative bg-cover bg-center text-white h-80 rounded shadow hover:scale-105 transform transition-transform duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?latte')">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="relative p-6">
-          <h3 class="text-2xl font-bold mb-2">Latte</h3>
+      <!-- Menu Card 2 -->
+      <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?latte')">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative p-6 text-pink-100">
+          <h3 class="text-2xl font-bold mb-2 text-pink-400">Latte</h3>
           <p>Smooth and creamy.</p>
           <p class="mt-4 font-semibold">Add-ons: Hazelnut, Extra Shot, Almond Milk</p>
         </div>
       </article>
 
-      <article class="relative bg-cover bg-center text-white h-80 rounded shadow hover:scale-105 transform transition-transform duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?cappuccino')">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="relative p-6">
-          <h3 class="text-2xl font-bold mb-2">Cappuccino</h3>
+      <!-- Menu Card 3 -->
+      <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?cappuccino')">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative p-6 text-pink-100">
+          <h3 class="text-2xl font-bold mb-2 text-pink-400">Cappuccino</h3>
           <p>Foamy perfection.</p>
           <p class="mt-4 font-semibold">Add-ons: Cocoa, Cinnamon, Oat Milk</p>
         </div>
@@ -65,22 +80,22 @@
 
   <!-- About Section -->
   <section id="about" class="py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4">About Coffee Bliss</h2>
-    <p class="max-w-2xl mx-auto text-gray-700">
+    <h2 class="text-3xl font-bold mb-4 text-pink-400">About Coffee Bliss</h2>
+    <p class="max-w-2xl mx-auto text-pink-200">
       Located in the heart of the city, Coffee Bliss is a cozy café where every cup is brewed to bring you joy. We source ethically, roast passionately, and serve warmly.
     </p>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 px-4 bg-gray-50 text-center">
-    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-    <p class="mb-6">Ready to order or have questions? Reach us via our Gmail:</p>
-    <a href="mailto:coffeebliss.cafe@gmail.com" class="text-yellow-800 font-semibold underline transition-colors duration-200 hover:text-yellow-600">coffeebliss.cafe@gmail.com</a>
+  <section id="contact" class="py-16 px-4 text-center bg-black">
+    <h2 class="text-3xl font-bold mb-4 text-pink-400">Contact Us</h2>
+    <p class="mb-6 text-pink-200">Ready to order or have questions? Reach us via our Gmail:</p>
+    <a href="mailto:coffeebliss.cafe@gmail.com" class="text-pink-500 font-semibold underline hover:text-pink-300 transition">coffeebliss.cafe@gmail.com</a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center p-6">
-    <p>&copy; 2025 Coffee Bliss. Brewed with love.</p>
+  <footer class="bg-black border-t border-pink-500 text-center p-6 text-pink-200">
+    <p>&copy; 2025 Coffee Bliss. Brewed with 💖.</p>
   </footer>
 
 </body>
