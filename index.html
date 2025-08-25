@@ -50,42 +50,56 @@
   </section>
   
  <!-- Menu Section -->
-<section id="menu" class="py-16 px-4 bg-[var(--brown-dark)]">
-  <h2 class="text-3xl font-bold text-center mb-8 text-[var(--brown-accent)]">Our Menu</h2>
-  <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-
-    
-      <!-- Menu Cards -->
-     <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden"
-      style="background-image:url('https://images.unsplash.com/photo-1587248726073-4650e1b8f89b?auto=format&fit=crop&w=800&q=80');">
-      <div class="absolute inset-0 bg-[var(--brown-dark)] bg-opacity-70"></div>
-      <div class="relative p-6 text-[var(--brown-light)]">
-        <h3 class="text-2xl font-bold mb-2 text-[var(--brown-accent)]">Espresso</h3>
-        <p>Classic bold flavor.</p>
-        <p class="mt-4 font-semibold">Add-ons: Vanilla, Caramel, Soy Milk</p>
-      </div>
-    </article>
-    
-     <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden"
-      style="background-image:url('https://images.unsplash.com/photo-1525295815900-70031f37b574?auto=format&fit=crop&w=800&q=80');">
-      <div class="absolute inset-0 bg-[var(--brown-dark)] bg-opacity-70"></div>
-      <div class="relative p-6 text-[var(--brown-light)]">
-        <h3 class="text-2xl font-bold mb-2 text-[var(--brown-accent)]">Latte</h3>
-        <p>Smooth and creamy.</p>
-        <p class="mt-4 font-semibold">Add-ons: Hazelnut, Extra Shot, Almond Milk</p>
-      </div>
-    </article>
-
+<section id="menu" class="relative py-16 px-4 text-white">
+  <!-- Background Image -->
+  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+       style="background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1500&q=80');">
+  </div>
+  
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-[var(--brown-dark)] bg-opacity-80"></div>
+  
+  <!-- Content -->
+  <div class="relative z-10">
+    <h2 class="text-3xl font-bold text-center mb-8 text-[var(--brown-accent)]">Our Menu</h2>
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      
+      <!-- Espresso -->
       <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden"
-      style="background-image:url('https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80');">
-      <div class="absolute inset-0 bg-[var(--brown-dark)] bg-opacity-70"></div>
-      <div class="relative p-6 text-[var(--brown-light)]">
-        <h3 class="text-2xl font-bold mb-2 text-[var(--brown-accent)]">Cappuccino</h3>
-        <p>Foamy perfection.</p>
-        <p class="mt-4 font-semibold">Add-ons: Cocoa, Cinnamon, Oat Milk</p>
-      </div>
-    </article>
-    </section>
+        style="background-image:url('https://images.unsplash.com/photo-1587248726073-4650e1b8f89b?auto=format&fit=crop&w=800&q=80');">
+        <div class="absolute inset-0 bg-[var(--brown-dark)] bg-opacity-70"></div>
+        <div class="relative p-6 text-[var(--brown-light)]">
+          <h3 class="text-2xl font-bold mb-2 text-[var(--brown-accent)]">Espresso</h3>
+          <p>Classic bold flavor.</p>
+          <p class="mt-4 font-semibold">Add-ons: Vanilla, Caramel, Soy Milk</p>
+        </div>
+      </article>
+
+      <!-- Latte -->
+      <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden"
+        style="background-image:url('https://images.unsplash.com/photo-1525295815900-70031f37b574?auto=format&fit=crop&w=800&q=80');">
+        <div class="absolute inset-0 bg-[var(--brown-dark)] bg-opacity-70"></div>
+        <div class="relative p-6 text-[var(--brown-light)]">
+          <h3 class="text-2xl font-bold mb-2 text-[var(--brown-accent)]">Latte</h3>
+          <p>Smooth and creamy.</p>
+          <p class="mt-4 font-semibold">Add-ons: Hazelnut, Extra Shot, Almond Milk</p>
+        </div>
+      </article>
+
+      <!-- Cappuccino -->
+      <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden"
+        style="background-image:url('https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80');">
+        <div class="absolute inset-0 bg-[var(--brown-dark)] bg-opacity-70"></div>
+        <div class="relative p-6 text-[var(--brown-light)]">
+          <h3 class="text-2xl font-bold mb-2 text-[var(--brown-accent)]">Cappuccino</h3>
+          <p>Foamy perfection.</p>
+          <p class="mt-4 font-semibold">Add-ons: Cocoa, Cinnamon, Oat Milk</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
   <!-- About -->
   <section id="about" class="py-16 px-4 text-center">
     <h2 class="text-3xl font-bold mb-4 text-[var(--brown-accent)]">About Coffee Bliss</h2>
