@@ -6,6 +6,14 @@
   <title>Coffee Bliss</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    :root {
+      --brown-dark: #3E2C24;
+      --brown-accent: #A9745E;
+      --brown-light: #EADBC8;
+      --brown-btn: #7B4B3A;
+      --brown-hover: #5C3A2E;
+    }
+
     .animate-pulse-custom {
       animation: pulse-custom 2s infinite;
     }
@@ -16,59 +24,58 @@
     }
   </style>
 </head>
-<body class="font-sans bg-black text-white">
+<body class="font-sans bg-[var(--brown-dark)] text-[var(--brown-light)]">
 
   <!-- Header -->
-  <header class="bg-black border-b border-yellow-400 text-white p-6">
-    <nav class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-yellow-400">Coffee Bliss</h1>
-      <ul class="flex space-x-6 text-lg">
-        <li><a href="#home" class="hover:text-yellow-300 transition">Home</a></li>
-        <li><a href="#menu" class="hover:text-yellow-300 transition">Menu</a></li>
-        <li><a href="#about" class="hover:text-yellow-300 transition">About</a></li>
-        <li><a href="#contact" class="hover:text-yellow-300 transition">Contact</a></li>
+  <header class="bg-[var(--brown-dark)] border-b border-[var(--brown-accent)] p-6">
+    <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <h1 class="text-2xl font-bold text-[var(--brown-accent)]">Coffee Bliss</h1>
+      <ul class="flex flex-wrap gap-4 text-lg">
+        <li><a href="#home" class="hover:text-[var(--brown-accent)] transition">Home</a></li>
+        <li><a href="#menu" class="hover:text-[var(--brown-accent)] transition">Menu</a></li>
+        <li><a href="#about" class="hover:text-[var(--brown-accent)] transition">About</a></li>
+        <li><a href="#contact" class="hover:text-[var(--brown-accent)] transition">Contact</a></li>
+        <li><button onclick="toggleLoginModal()" class="text-[var(--brown-accent)] hover:text-[var(--brown-light)] transition">Log In</button></li>
       </ul>
     </nav>
   </header>
 
   <!-- Home Section -->
   <section id="home" class="py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-yellow-400 animate-pulse-custom">How to Order</h2>
-    <button class="mt-6 px-6 py-2 bg-yellow-700 text-white rounded hover:bg-yellow-800 transition">Order Now</button>
-    <p class="max-w-xl mx-auto text-yellow-200">
+    <h2 class="text-3xl font-bold mb-4 text-[var(--brown-accent)] animate-pulse-custom">How to Order</h2>
+    <button class="mt-6 px-6 py-2 bg-[var(--brown-btn)] text-white rounded hover:bg-[var(--brown-hover)] transition">Order Now</button>
+    <p class="max-w-xl mx-auto text-[var(--brown-light)] mt-4">
       Browse our menu, choose your favorite coffee and add‑ons, then click or email us to place your order. It’s that simple!
     </p>
   </section>
 
   <!-- Menu Section -->
-  <section id="menu" class="py-16 px-4 bg-black">
-    <h2 class="text-3xl font-bold text-center mb-8 text-yellow-400">Our Menu</h2>
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Menu Card 1 -->
+  <section id="menu" class="py-16 px-4 bg-[var(--brown-dark)]">
+    <h2 class="text-3xl font-bold text-center mb-8 text-[var(--brown-accent)]">Our Menu</h2>
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Menu Cards -->
       <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?espresso')">
-        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div class="relative p-6 text-yellow-100">
-          <h3 class="text-2xl font-bold mb-2 text-yellow-300">Espresso</h3>
+        <div class="absolute inset-0 bg-[var(--brown-dark)] bg-opacity-70"></div>
+        <div class="relative p-6 text-[var(--brown-light)]">
+          <h3 class="text-2xl font-bold mb-2 text-[var(--brown-accent)]">Espresso</h3>
           <p>Classic bold flavor.</p>
           <p class="mt-4 font-semibold">Add-ons: Vanilla, Caramel, Soy Milk</p>
         </div>
       </article>
 
-      <!-- Menu Card 2 -->
       <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?latte')">
-        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div class="relative p-6 text-yellow-100">
-          <h3 class="text-2xl font-bold mb-2 text-yellow-300">Latte</h3>
+        <div class="absolute inset-0 bg-[var(--brown-dark)] bg-opacity-70"></div>
+        <div class="relative p-6 text-[var(--brown-light)]">
+          <h3 class="text-2xl font-bold mb-2 text-[var(--brown-accent)]">Latte</h3>
           <p>Smooth and creamy.</p>
           <p class="mt-4 font-semibold">Add-ons: Hazelnut, Extra Shot, Almond Milk</p>
         </div>
       </article>
 
-      <!-- Menu Card 3 -->
       <article class="relative bg-cover bg-center h-80 rounded shadow-lg hover:scale-105 transform transition duration-300 ease-in-out overflow-hidden" style="background-image:url('https://source.unsplash.com/600x400/?cappuccino')">
-        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div class="relative p-6 text-yellow-100">
-          <h3 class="text-2xl font-bold mb-2 text-yellow-300">Cappuccino</h3>
+        <div class="absolute inset-0 bg-[var(--brown-dark)] bg-opacity-70"></div>
+        <div class="relative p-6 text-[var(--brown-light)]">
+          <h3 class="text-2xl font-bold mb-2 text-[var(--brown-accent)]">Cappuccino</h3>
           <p>Foamy perfection.</p>
           <p class="mt-4 font-semibold">Add-ons: Cocoa, Cinnamon, Oat Milk</p>
         </div>
@@ -76,48 +83,75 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about" class="py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-yellow-400">About Coffee Bliss</h2>
-    <p class="max-w-2xl mx-auto text-yellow-200">
+    <h2 class="text-3xl font-bold mb-4 text-[var(--brown-accent)]">About Coffee Bliss</h2>
+    <p class="max-w-2xl mx-auto text-[var(--brown-light)]">
       Located in the heart of the city, Coffee Bliss is a cozy café where every cup is brewed to bring you joy. We source ethically, roast passionately, and serve warmly.
     </p>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 px-4 text-center bg-black">
-    <h2 class="text-3xl font-bold mb-4 text-yellow-400">Contact Us</h2>
-    <p class="mb-6 text-yellow-200">Ready to order or have questions? Reach us via our Gmail:</p>
-    <a href="mailto:coffeebliss.cafe@gmail.com" class="text-yellow-400 font-semibold underline hover:text-yellow-200 transition">coffeebliss.cafe@gmail.com</a>
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-4 text-center bg-[var(--brown-dark)]">
+    <h2 class="text-3xl font-bold mb-4 text-[var(--brown-accent)]">Contact Us</h2>
+    <p class="mb-6 text-[var(--brown-light)]">Ready to order or have questions? Reach us via our Gmail:</p>
+    <a href="mailto:coffeebliss.cafe@gmail.com" class="text-[var(--brown-accent)] font-semibold underline hover:text-[var(--brown-light)] transition">coffeebliss.cafe@gmail.com</a>
   </section>
-  <!-- 🔧 Log In Modal -->
+
+  <!-- 🔐 Login Modal -->
   <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
     <div class="bg-white text-black rounded-lg p-8 w-full max-w-md relative">
       <button onclick="toggleLoginModal()" class="absolute top-2 right-3 text-gray-600 hover:text-black text-2xl">&times;</button>
-      <h2 class="text-2xl font-bold mb-4 text-pink-600">Log In to Coffee Bliss</h2>
-      <form>
+      <h2 class="text-2xl font-bold mb-4 text-[var(--brown-btn)]">Log In to Coffee Bliss</h2>
+      <form onsubmit="return loginUser(event)">
         <div class="mb-4">
           <label for="email" class="block mb-1 font-semibold">Email</label>
-          <input type="email" id="email" class="w-full px-4 py-2 border border-pink-300 rounded focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="you@example.com" />
+          <input type="email" id="email" class="w-full px-4 py-2 border border-[var(--brown-accent)] rounded focus:outline-none focus:ring-2 focus:ring-[var(--brown-btn)]" placeholder="you@example.com" />
         </div>
-        <div class="mb-6">
+        <div class="mb-4">
           <label for="password" class="block mb-1 font-semibold">Password</label>
-          <input type="password" id="password" class="w-full px-4 py-2 border border-pink-300 rounded focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="••••••••" />
+          <input type="password" id="password" class="w-full px-4 py-2 border border-[var(--brown-accent)] rounded focus:outline-none focus:ring-2 focus:ring-[var(--brown-btn)]" placeholder="••••••••" />
         </div>
-        <button type="submit" class="w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700 transition">Log In</button>
+        <p id="loginMessage" class="mb-4 text-sm"></p>
+        <button type="submit" class="w-full bg-[var(--brown-btn)] text-white py-2 rounded hover:bg-[var(--brown-hover)] transition">Log In</button>
       </form>
     </div>
   </div>
+
   <!-- Footer -->
-  <footer class="bg-black border-t border-yellow-400 text-center p-6 text-yellow-200">
+  <footer class="bg-[var(--brown-dark)] border-t border-[var(--brown-accent)] text-center p-6 text-[var(--brown-light)]">
     <p>&copy; 2025 Coffee Bliss. Brewed with 💛.</p>
   </footer>
- <!-- 🔧 Script to toggle modal -->
+
+  <!-- Scripts -->
   <script>
     function toggleLoginModal() {
       const modal = document.getElementById('loginModal');
       modal.classList.toggle('hidden');
     }
+
+    function loginUser(event) {
+      event.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const message = document.getElementById('loginMessage');
+
+      // Dummy credentials
+      const dummyUser = {
+        email: 'user@coffee.com',
+        password: 'coffee123'
+      };
+
+      if (email === dummyUser.email && password === dummyUser.password) {
+        message.textContent = 'Login successful!';
+        message.className = 'text-green-600 mb-4 text-sm';
+        setTimeout(() => toggleLoginModal(), 1000);
+      } else {
+        message.textContent = 'Invalid email or password.';
+        message.className = 'text-red-600 mb-4 text-sm';
+      }
+    }
   </script>
 </body>
+</html>
 </html>
