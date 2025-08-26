@@ -6,19 +6,14 @@
   <title>FictionNest</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
- :root {
-  /* Book Cover Tones */
-  --book-cover-light: #a95d1a;   /* creamy page tone */
-  --book-cover-warm: #51331b;    /* light peachy beige */
-  --book-spine-brown: #4e280f;   /* dusty rose brown spine */
-  --book-hover-brown: #8b5e3c;   /* rich antique brown */
-
-  /* Paper & Leather Accents */
-  --book-leather-light: #bc7d3a;  /* parchment paper or old page color */
-  --book-leather: #674c33;        /* warm tan leather tone */
-  --book-ink: #5d3b1f;            /* deep ink brown for text */
-  --book-ink-hover: #3e2714;      /* extra dark for hover links/buttons */
-}
+    :root {
+      --green-bg: #0e1e14;           /* dark green background */
+      --green-light: #2d4733;       /* muted forest green */
+      --green-accent: #7ec69a;      /* light moss green */
+      --green-highlight: #48b07e;   /* hover and button highlight */
+      --green-ink: #d8f3dc;         /* light ink/text color */
+      --green-shadow: #1b3524;      /* for shadows/borders */
+    }
 
     .animate-pulse-custom {
       animation: pulse-custom 2s infinite;
@@ -30,56 +25,56 @@
     }
   </style>
 </head>
-<body class="font-sans bg-[var(--pink-lightest)] text-[var(--pink-accent)]">
+<body class="font-sans bg-[var(--green-bg)] text-[var(--green-ink)]">
 
   <!-- Header -->
-  <header class="bg-[var(--green-lightest)] border-b border-[var(--green-accent)] p-6">
+  <header class="bg-[var(--green-light)] border-b border-[var(--green-highlight)] p-6">
     <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
       <h1 class="text-2xl font-bold text-[var(--green-accent)]">FictionNest</h1>
       <ul class="flex flex-wrap gap-4 text-lg">
-        <li><a href="#home" class="hover:text-[var(--pink-hover)] transition">Home</a></li>
-        <li><a href="#collection" class="hover:text-[var(--pink-hover)] transition">Collection</a></li>
-        <li><a href="#about" class="hover:text-[var(--pink-hover)] transition">About</a></li>
-        <li><a href="#contact" class="hover:text-[var(--pink-hover)] transition">Contact</a></li>
+        <li><a href="#home" class="hover:text-[var(--green-highlight)] transition">Home</a></li>
+        <li><a href="#collection" class="hover:text-[var(--green-highlight)] transition">Collection</a></li>
+        <li><a href="#about" class="hover:text-[var(--green-highlight)] transition">About</a></li>
+        <li><a href="#contact" class="hover:text-[var(--green-highlight)] transition">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Home Section -->
   <section id="home" class="py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-[var(--pink-accent)] animate-pulse-custom">Welcome to FictionNest</h2>
-    <p class="max-w-xl mx-auto text-[var(--green-accent)] mt-4">
+    <h2 class="text-3xl font-bold mb-4 text-[var(--green-accent)] animate-pulse-custom">Welcome to FictionNest</h2>
+    <p class="max-w-xl mx-auto text-[var(--green-ink)] mt-4">
       A cozy rental nook curated by a 20-year-old fiction lover. Here, you can explore magical worlds, gripping love stories, and thrilling mysteries — all available to rent.
     </p>
-    <button class="mt-6 px-6 py-2 bg-[var(--green-main)] text-white rounded hover:bg-[var(--green-hover)] transition">
+    <button class="mt-6 px-6 py-2 bg-[var(--green-highlight)] text-white rounded hover:bg-[var(--green-accent)] transition">
       Rent a Book
     </button>
   </section>
 
   <!-- Collection Section -->
-  <section id="collection" class="py-16 px-4 text-center bg-[var(--pink-lighter)]">
-    <h2 class="text-3xl font-bold text-[var(--pink-accent)] mb-10">Available Genres</h2>
+  <section id="collection" class="py-16 px-4 text-center bg-[var(--green-light)]">
+    <h2 class="text-3xl font-bold text-[var(--green-accent)] mb-10">Available Genres</h2>
     <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
       <!-- Fantasy -->
-      <div class="bg-[var(--green-lightest)] rounded-lg shadow-md p-6 hover:shadow-lg transition">
+      <div class="bg-[var(--green-bg)] rounded-lg shadow-md p-6 hover:shadow-lg hover:shadow-[var(--green-shadow)] transition">
         <h3 class="text-2xl font-bold mb-2 text-[var(--green-accent)]">Fantasy</h3>
         <p>Escape to magical lands filled with dragons, spells, and epic quests.</p>
-        <p class="mt-2 font-semibold text-[var(--pink-accent)]">Top Pick: *Throne of Glass*</p>
+        <p class="mt-2 font-semibold text-[var(--green-highlight)]">Top Pick: *Throne of Glass*</p>
       </div>
 
       <!-- Romance -->
-      <div class="bg-[var(--green-lightest)] rounded-lg shadow-md p-6 hover:shadow-lg transition">
+      <div class="bg-[var(--green-bg)] rounded-lg shadow-md p-6 hover:shadow-lg hover:shadow-[var(--green-shadow)] transition">
         <h3 class="text-2xl font-bold mb-2 text-[var(--green-accent)]">Romance</h3>
         <p>Heart-fluttering love stories for hopeless romantics and realists alike.</p>
-        <p class="mt-2 font-semibold text-[var(--pink-accent)]">Top Pick: *The Love Hypothesis*</p>
+        <p class="mt-2 font-semibold text-[var(--green-highlight)]">Top Pick: *The Love Hypothesis*</p>
       </div>
 
       <!-- Mystery -->
-      <div class="bg-[var(--green-lightest)] rounded-lg shadow-md p-6 hover:shadow-lg transition">
+      <div class="bg-[var(--green-bg)] rounded-lg shadow-md p-6 hover:shadow-lg hover:shadow-[var(--green-shadow)] transition">
         <h3 class="text-2xl font-bold mb-2 text-[var(--green-accent)]">Mystery</h3>
         <p>Intriguing tales filled with twists, secrets, and page-turning suspense.</p>
-        <p class="mt-2 font-semibold text-[var(--pink-accent)]">Top Pick: *A Good Girl's Guide to Murder*</p>
+        <p class="mt-2 font-semibold text-[var(--green-highlight)]">Top Pick: *A Good Girl's Guide to Murder*</p>
       </div>
 
     </div>
@@ -87,24 +82,24 @@
 
   <!-- About -->
   <section id="about" class="py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-[var(--pink-accent)]">About Me</h2>
-    <p class="max-w-2xl mx-auto text-[var(--green-accent)]">
+    <h2 class="text-3xl font-bold mb-4 text-[var(--green-accent)]">About Me</h2>
+    <p class="max-w-2xl mx-auto text-[var(--green-ink)]">
       Hey! I'm a 20-year-old who’s absolutely obsessed with fictional books. I started FictionNest so I could share my favorite stories with other readers through a cozy little rental service. Let my bookshelf be your next adventure!
     </p>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-16 px-4 text-center bg-[var(--green-lightest)]">
+  <section id="contact" class="py-16 px-4 text-center bg-[var(--green-light)]">
     <h2 class="text-3xl font-bold mb-4 text-[var(--green-accent)]">Contact Me</h2>
-    <p class="mb-6 text-[var(--pink-accent)]">Have a question or want to rent a book?</p>
-    <a href="mailto:fictionnest@gmail.com" class="text-[var(--pink-accent)] font-semibold underline hover:text-[var(--pink-hover)] transition">
+    <p class="mb-6 text-[var(--green-highlight)]">Have a question or want to rent a book?</p>
+    <a href="mailto:fictionnest@gmail.com" class="text-[var(--green-accent)] font-semibold underline hover:text-[var(--green-highlight)] transition">
       fictionnest@gmail.com
     </a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-[var(--pink-lighter)] border-t border-[var(--green-accent)] text-center p-6 text-[var(--green-accent)]">
-    <p>&copy; 2025 FictionNest. Stories to share, hearts to touch. 💖📚</p>
+  <footer class="bg-[var(--green-bg)] border-t border-[var(--green-accent)] text-center p-6 text-[var(--green-accent)]">
+    <p>&copy; 2025 FictionNest. Stories to share, hearts to touch. 🌲📚</p>
   </footer>
 </body>
 </html>
