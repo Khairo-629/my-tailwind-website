@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Colen's Cafe</title>
+  <title>FictionNest</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
-  --green-lightest: #e6f9f0;   /* soft mint */
-  --green-lighter: #ccf2e0;    /* light jade */
-  --green-main: #7dd3a7;       /* medium mint */
-  --green-dark: #34d399;       /* fresh green */
-  --green-accent: #10b981;     /* emerald */
-  --green-hover: #059669;      /* deep green hover */
-}
+      --pink-lightest: #fff1f5;
+      --pink-lighter: #ffe4ec;
+      --pink-main: #fbb6ce;
+      --pink-accent: #e75480;
+      --pink-hover: #d6336c;
 
+      --green-lightest: #e6f9f0;
+      --green-main: #a3d9b1;
+      --green-accent: #469f78;
+      --green-hover: #2f8162;
+    }
 
     .animate-pulse-custom {
       animation: pulse-custom 2s infinite;
@@ -26,55 +29,56 @@
     }
   </style>
 </head>
-<body class="font-sans bg-[var(--green-lightest)] text-[var(--green-accent)]">
+<body class="font-sans bg-[var(--pink-lightest)] text-[var(--pink-accent)]">
 
   <!-- Header -->
-  <header class="bg-[var(--green-lighter)] border-b border-[var(--green-accent)] p-6">
+  <header class="bg-[var(--green-lightest)] border-b border-[var(--green-accent)] p-6">
     <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-      <h1 class="text-2xl font-bold text-[var(--blue-accent)]">Colen' Cafe</h1>
+      <h1 class="text-2xl font-bold text-[var(--green-accent)]">FictionNest</h1>
       <ul class="flex flex-wrap gap-4 text-lg">
-        <li><a href="#home" class="hover:text-[var(--green-hover)] transition">Home</a></li>
-        <li><a href="#menu" class="hover:text-[var(--green-hover)] transition">Menu</a></li>
-        <li><a href="#about" class="hover:text-[var(--green-hover)] transition">About</a></li>
-        <li><a href="#contact" class="hover:text-[var(--green-hover)] transition">Contact</a></li>
-        <li><button onclick="toggleLoginModal()" class="text-[var(--green-accent)] hover:text-[var(--green-hover)] transition">Log In</button></li>
+        <li><a href="#home" class="hover:text-[var(--pink-hover)] transition">Home</a></li>
+        <li><a href="#collection" class="hover:text-[var(--pink-hover)] transition">Collection</a></li>
+        <li><a href="#about" class="hover:text-[var(--pink-hover)] transition">About</a></li>
+        <li><a href="#contact" class="hover:text-[var(--pink-hover)] transition">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Home Section -->
   <section id="home" class="py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-[var(--green-accent)] animate-pulse-custom">How to Order</h2>
-    <button class="mt-6 px-6 py-2 bg-[var(--green-main)] text-white rounded hover:bg-[var(--green-hover)] transition">Order Now</button>
+    <h2 class="text-3xl font-bold mb-4 text-[var(--pink-accent)] animate-pulse-custom">Welcome to FictionNest</h2>
     <p class="max-w-xl mx-auto text-[var(--green-accent)] mt-4">
-      Browse our menu, choose your favorite coffee and add‑ons, then click or email us to place your order. It’s that simple!
+      A cozy rental nook curated by a 20-year-old fiction lover. Here, you can explore magical worlds, gripping love stories, and thrilling mysteries — all available to rent.
     </p>
+    <button class="mt-6 px-6 py-2 bg-[var(--green-main)] text-white rounded hover:bg-[var(--green-hover)] transition">
+      Rent a Book
+    </button>
   </section>
 
-  <!-- Menu Section -->
-  <section id="menu" class="py-16 px-4 text-center bg-[var(--green-lighter)]">
-    <h2 class="text-3xl font-bold text-[var(--green-accent)] mb-10">Our Menu</h2>
+  <!-- Collection Section -->
+  <section id="collection" class="py-16 px-4 text-center bg-[var(--pink-lighter)]">
+    <h2 class="text-3xl font-bold text-[var(--pink-accent)] mb-10">Available Genres</h2>
     <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
-      <!-- Espresso -->
+      <!-- Fantasy -->
       <div class="bg-[var(--green-lightest)] rounded-lg shadow-md p-6 hover:shadow-lg transition">
-        <h3 class="text-2xl font-bold mb-2">Espresso</h3>
-        <p>Classic bold flavor.</p>
-        <p class="mt-2 font-semibold">Add-ons: Vanilla, Caramel, Soy Milk</p>
+        <h3 class="text-2xl font-bold mb-2 text-[var(--green-accent)]">Fantasy</h3>
+        <p>Escape to magical lands filled with dragons, spells, and epic quests.</p>
+        <p class="mt-2 font-semibold text-[var(--pink-accent)]">Top Pick: *Throne of Glass*</p>
       </div>
 
-      <!-- Latte -->
+      <!-- Romance -->
       <div class="bg-[var(--green-lightest)] rounded-lg shadow-md p-6 hover:shadow-lg transition">
-        <h3 class="text-2xl font-bold mb-2">Latte</h3>
-        <p>Smooth and creamy.</p>
-        <p class="mt-2 font-semibold">Add-ons: Hazelnut, Extra Shot, Almond Milk</p>
+        <h3 class="text-2xl font-bold mb-2 text-[var(--green-accent)]">Romance</h3>
+        <p>Heart-fluttering love stories for hopeless romantics and realists alike.</p>
+        <p class="mt-2 font-semibold text-[var(--pink-accent)]">Top Pick: *The Love Hypothesis*</p>
       </div>
 
-      <!-- Cappuccino -->
+      <!-- Mystery -->
       <div class="bg-[var(--green-lightest)] rounded-lg shadow-md p-6 hover:shadow-lg transition">
-        <h3 class="text-2xl font-bold mb-2">Cappuccino</h3>
-        <p>Foamy perfection.</p>
-        <p class="mt-2 font-semibold">Add-ons: Cocoa, Cinnamon, Oat Milk</p>
+        <h3 class="text-2xl font-bold mb-2 text-[var(--green-accent)]">Mystery</h3>
+        <p>Intriguing tales filled with twists, secrets, and page-turning suspense.</p>
+        <p class="mt-2 font-semibold text-[var(--pink-accent)]">Top Pick: *A Good Girl's Guide to Murder*</p>
       </div>
 
     </div>
@@ -82,72 +86,24 @@
 
   <!-- About -->
   <section id="about" class="py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-[var(--green-accent)]">About Colen's Cafe</h2>
+    <h2 class="text-3xl font-bold mb-4 text-[var(--pink-accent)]">About Me</h2>
     <p class="max-w-2xl mx-auto text-[var(--green-accent)]">
-      Colen' Cafe is a coastal hideaway where calm meets caffeine. We craft each cup with love, using handpicked beans and 
-      ocean-inspired ambiance. Whether you're catching up with friends or catching waves, we’re here to keep you refreshed.
+      Hey! I'm a 20-year-old who’s absolutely obsessed with fictional books. I started FictionNest so I could share my favorite stories with other readers through a cozy little rental service. Let my bookshelf be your next adventure!
     </p>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-16 px-4 text-center bg-[var(--blue-lighter)]">
-    <h2 class="text-3xl font-bold mb-4 text-[var(--blue-accent)]">Contact Us</h2>
-    <p class="mb-6 text-[var(--blue-accent)]">Want to order or ask something? Email us at:</p>
-    <a href="mailto:colencafe@gmail.com" class="text-[var(--blue-main)] font-semibold underline hover:text-[var(--blue-hover)] transition">colencafe@gmail.com</a>
+  <section id="contact" class="py-16 px-4 text-center bg-[var(--green-lightest)]">
+    <h2 class="text-3xl font-bold mb-4 text-[var(--green-accent)]">Contact Me</h2>
+    <p class="mb-6 text-[var(--pink-accent)]">Have a question or want to rent a book?</p>
+    <a href="mailto:fictionnest@gmail.com" class="text-[var(--pink-accent)] font-semibold underline hover:text-[var(--pink-hover)] transition">
+      fictionnest@gmail.com
+    </a>
   </section>
 
-  <!-- 🔐 Login Modal -->
-  <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
-    <div class="bg-white text-black rounded-lg p-8 w-full max-w-md relative">
-      <button onclick="toggleLoginModal()" class="absolute top-2 right-3 text-gray-600 hover:text-black text-2xl">&times;</button>
-      <h2 class="text-2xl font-bold mb-4 text-[var(--blue-accent)]">Log In to Colen's Cafe</h2>
-      <form onsubmit="return loginUser(event)">
-        <div class="mb-4">
-          <label for="email" class="block mb-1 font-semibold">Email</label>
-          <input type="email" id="email" class="w-full px-4 py-2 border border-[var(--blue-accent)] rounded focus:outline-none focus:ring-2 focus:ring-[var(--blue-main)]" placeholder="you@example.com" />
-        </div>
-        <div class="mb-4">
-          <label for="password" class="block mb-1 font-semibold">Password</label>
-          <input type="password" id="password" class="w-full px-4 py-2 border border-[var(--blue-accent)] rounded focus:outline-none focus:ring-2 focus:ring-[var(--blue-main)]" placeholder="••••••••" />
-        </div>
-        <p id="loginMessage" class="mb-4 text-sm"></p>
-        <button type="submit" class="w-full bg-[var(--blue-main)] text-white py-2 rounded hover:bg-[var(--blue-hover)] transition">Log In</button>
-      </form>
-    </div>
-  </div>
-
   <!-- Footer -->
-  <footer class="bg-[var(--green-lighter)] border-t border-[var(--blue-accent)] text-center p-6 text-[var(--blue-accent)]">
-    <p>&copy; 2025 Colen's Cafe. Calm meets Coffee ☕💚</p>
+  <footer class="bg-[var(--pink-lighter)] border-t border-[var(--green-accent)] text-center p-6 text-[var(--green-accent)]">
+    <p>&copy; 2025 FictionNest. Stories to share, hearts to touch. 💖📚</p>
   </footer>
-
-  <!-- Scripts -->
-  <script>
-    function toggleLoginModal() {
-      const modal = document.getElementById('loginModal');
-      modal.classList.toggle('hidden');
-    }
-
-    function loginUser(event) {
-      event.preventDefault();
-      const email = document.getElementById('email').value.trim();
-      const password = document.getElementById('password').value.trim();
-      const message = document.getElementById('loginMessage');
-
-      const dummyUser = {
-        email: 'user@colencafe.com',
-        password: 'coffee123'
-      };
-
-      if (email === dummyUser.email && password === dummyUser.password) {
-        message.textContent = 'Login successful!';
-        message.className = 'text-green-600 mb-4 text-sm';
-        setTimeout(() => toggleLoginModal(), 1000);
-      } else {
-        message.textContent = 'Invalid email or password.';
-        message.className = 'text-red-600 mb-4 text-sm';
-      }
-    }
-  </script>
 </body>
 </html>
