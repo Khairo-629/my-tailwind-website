@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FictionNest</title>
+  <title>Chapter & Co.</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
@@ -30,10 +30,11 @@
   <!-- Header -->
   <header class="bg-[var(--green-light)] border-b border-[var(--green-highlight)] p-6">
     <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-      <h1 class="text-2xl font-bold text-[var(--green-accent)]">FictionNest</h1>
+      <h1 class="text-2xl font-bold text-[var(--green-accent)]">Chapter & Co.</h1>
       <ul class="flex flex-wrap gap-4 text-lg">
         <li><a href="#home" class="hover:text-[var(--green-highlight)] transition">Home</a></li>
         <li><a href="#collection" class="hover:text-[var(--green-highlight)] transition">Collection</a></li>
+        <li><a href="#popular" class="hover:text-[var(--green-highlight)] transition">Popular Books</a></li>
         <li><a href="#about" class="hover:text-[var(--green-highlight)] transition">About</a></li>
         <li><a href="#contact" class="hover:text-[var(--green-highlight)] transition">Contact</a></li>
       </ul>
@@ -42,9 +43,9 @@
 
   <!-- Home Section -->
   <section id="home" class="py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-[var(--green-accent)] animate-pulse-custom">Welcome to FictionNest</h2>
+    <h2 class="text-3xl font-bold mb-4 text-[var(--green-accent)] animate-pulse-custom">Welcome to Chapter & Co.</h2>
     <p class="max-w-xl mx-auto text-[var(--green-ink)] mt-4">
-      A cozy rental nook curated by a 20-year-old fiction lover. Here, you can explore magical worlds, gripping love stories, and thrilling mysteries — all available to rent.
+      A cozy book rental run by a 20-year-old who loves fiction. Explore magical worlds, love stories, and mysteries here. All books are available to rent.
     </p>
     <button class="mt-6 px-6 py-2 bg-[var(--green-highlight)] text-white rounded hover:bg-[var(--green-accent)] transition">
       Rent a Book
@@ -59,23 +60,57 @@
       <!-- Fantasy -->
       <div class="bg-[var(--green-bg)] rounded-lg shadow-md p-6 hover:shadow-lg hover:shadow-[var(--green-shadow)] transition">
         <h3 class="text-2xl font-bold mb-2 text-[var(--green-accent)]">Fantasy</h3>
-        <p>Escape to magical lands filled with dragons, spells, and epic quests.</p>
+        <p>Escape to magical lands with dragons, spells, and quests.</p>
         <p class="mt-2 font-semibold text-[var(--green-highlight)]">Top Pick: *Throne of Glass*</p>
       </div>
 
       <!-- Romance -->
       <div class="bg-[var(--green-bg)] rounded-lg shadow-md p-6 hover:shadow-lg hover:shadow-[var(--green-shadow)] transition">
         <h3 class="text-2xl font-bold mb-2 text-[var(--green-accent)]">Romance</h3>
-        <p>Heart-fluttering love stories for hopeless romantics and realists alike.</p>
+        <p>Love stories for dreamers and realists alike.</p>
         <p class="mt-2 font-semibold text-[var(--green-highlight)]">Top Pick: *The Love Hypothesis*</p>
       </div>
 
       <!-- Mystery -->
       <div class="bg-[var(--green-bg)] rounded-lg shadow-md p-6 hover:shadow-lg hover:shadow-[var(--green-shadow)] transition">
         <h3 class="text-2xl font-bold mb-2 text-[var(--green-accent)]">Mystery</h3>
-        <p>Intriguing tales filled with twists, secrets, and page-turning suspense.</p>
+        <p>Tales full of twists, secrets, and suspense.</p>
         <p class="mt-2 font-semibold text-[var(--green-highlight)]">Top Pick: *A Good Girl's Guide to Murder*</p>
       </div>
+
+    </div>
+  </section>
+
+  <!-- Popular Books Section -->
+  <section id="popular" class="py-16 px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-[var(--green-accent)]">Popular Books in the Philippines</h2>
+
+    <div class="max-w-3xl mx-auto space-y-6 text-[var(--green-ink)]">
+
+      <h3 class="text-2xl font-semibold mb-2">Local & Filipino Authors</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Dekada ’70</strong> by Lualhati Bautista — A story about a family during Martial Law.</li>
+        <li><strong>Ilustrado</strong> by Miguel Syjuco — A mystery about Philippine society.</li>
+        <li><strong>Smaller and Smaller Circles</strong> by F.H. Batacan — A Filipino crime thriller.</li>
+        <li><strong>Chronicles of the Ghostly Tribe</strong> by Dean Francis Alfar — Filipino speculative fiction.</li>
+        <li><strong>The Woman Who Had Two Navels</strong> by Nick Joaquin — A classic about Filipino identity.</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-2">Popular Fiction</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>The Love Hypothesis</strong> by Ali Hazelwood</li>
+        <li><strong>Throne of Glass</strong> by Sarah J. Maas</li>
+        <li><strong>A Good Girl’s Guide to Murder</strong> by Holly Jackson</li>
+        <li><strong>Red, White & Royal Blue</strong> by Casey McQuiston</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mt-8 mb-2">Romance & YA Favorites</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Para Kay B</strong> by Ricky Lee — Romantic short stories.</li>
+        <li><strong>Because You Love to Hate Me</strong> — A collection by Filipino YA authors.</li>
+        <li><strong>The Bet</strong> by Abigail Hing Wen — A popular YA romance.</li>
+        <li><strong>The Fault in Our Stars</strong> by John Green</li>
+      </ul>
 
     </div>
   </section>
@@ -84,7 +119,7 @@
   <section id="about" class="py-16 px-4 text-center">
     <h2 class="text-3xl font-bold mb-4 text-[var(--green-accent)]">About Me</h2>
     <p class="max-w-2xl mx-auto text-[var(--green-ink)]">
-      Hey! I'm a 20-year-old who’s absolutely obsessed with fictional books. I started FictionNest so I could share my favorite stories with other readers through a cozy little rental service. Let my bookshelf be your next adventure!
+      Hi! I'm 20 and I love fiction books. I started Chapter & Co. to share my favorite stories with you. Join me and find your next great read.
     </p>
   </section>
 
@@ -99,7 +134,7 @@
 
   <!-- Footer -->
   <footer class="bg-[var(--green-bg)] border-t border-[var(--green-accent)] text-center p-6 text-[var(--green-accent)]">
-    <p>&copy; 2025 FictionNest. Stories to share, hearts to touch. 🌲📚</p>
+    <p>&copy; 2025 Chapter & Co. Stories to share, hearts to touch. 🌲📚</p>
   </footer>
 </body>
 </html>
